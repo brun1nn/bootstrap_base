@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,238 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <title>Art</title>
+  <title>Urban Art Gallery</title>
 </head>
+
 <body>
 
-  <!-- 1ª Digitação (Aqui) -->
+  <!-- =============================== HEADER =============================== -->
+  <header class="bg-light py-5">
+    <div class="container text-center">
+      <img src="img/art_logo.svg" alt="Art Logo" class="mb-3" style="max-width: 100px;">
+      <h1 class="display-4 fw-bold">Galeria de Arte Urbana</h1>
+      <p class="lead text-muted">Transformando cidades com arte e criatividade</p>
+    </div>
+  </header>
+
+  <!-- =============================== NAVBAR =============================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">ART</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#artists">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =============================== MAIN IMAGE SECTION =============================== -->
+  <section class="py-5 bg-body-secondary">
+    <div class="container">
+      <div class="position-relative" style="border-radius: 8px; overflow: hidden;">
+        <img src="img/main.jpg" alt="Obra Principal" style="width: 100%; display: block;">
+        <div class="position-absolute bottom-0 start-0 end-0 p-4 bg-dark bg-opacity-75"
+          style="border-radius: 0 0 8px 8px;">
+          <h2 class="text-white mb-2">Obra-Prima Urbana</h2>
+          <p class="text-white-50 mb-3">Data: 15 de Março de 2026</p>
+          <button class="btn btn-primary">Detalhes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== GALLERY SECTION =============================== -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Galeria de Obras</h2>
+      <div class="row g-4">
+
+        <!-- Obra 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_1.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Expressão Urbana</h5>
+              <p class="card-text secondary-color">Data: 10 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obra 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_2.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Cores da Cidade</h5>
+              <p class="card-text secondary-color">Data: 12 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obra 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_3.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Movimento Contemporâneo</h5>
+              <p class="card-text secondary-color">Data: 14 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obra 4 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_4.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Criatividade em Spray</h5>
+              <p class="card-text secondary-color">Data: 16 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obra 5 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_5.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Transformação Visual</h5>
+              <p class="card-text secondary-color">Data: 18 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Obra 6 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="center-image"
+              style="background-image: url('img/g_6.jpg'); height: 250px; background-size: cover; background-position: center;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Identidade Urbana</h5>
+              <p class="card-text secondary-color">Data: 20 de Março de 2026</p>
+              <button class="btn btn-primary btn-sm">Detalhes</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== ARTISTS SECTION =============================== -->
+  <section id="artists" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Artistas Destacados</h2>
+      <div class="row g-4 text-center">
+
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/gemeos.jpeg" class="card-img-top" alt="Artista 1" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Os Gêmeos</h5>
+              <p class="card-text secondary-color">Especialistas em grafite</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/kobra.jpg" class="card-img-top" alt="Artista 2" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Eduardo Kobra</h5>
+              <p class="card-text secondary-color">Um dos muralistas mais reconhecidos da atualidade</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="img/nina.jpg" class="card-img-top" alt="Artista 3" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Nina Pandolfo</h5>
+              <p class="card-text secondary-color">Grafiteira, escultora e artista visual brasileira</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="bg-dark text-light py-5 border-top">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-3">Sobre Nós</h5>
+          <p class="secondary-color">Somos uma plataforma dedicada a promover arte urbana e conectar artistas com
+            apreciadores de arte.</p>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+          <h5 class="mb-3">Links Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-decoration-none secondary-color link-hover">Home</a></li>
+            <li><a href="#projects" class="text-decoration-none secondary-color link-hover">Projetos</a></li>
+            <li><a href="#artists" class="text-decoration-none secondary-color link-hover">Artistas</a></li>
+            <li><a href="#contact" class="text-decoration-none secondary-color link-hover">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h5 class="mb-3">Redes Sociais</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light social-icon" title="Facebook">
+              <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+            </a>
+            <a href="#" class="text-light social-icon" title="Instagram">
+              <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+            </a>
+            <a href="#" class="text-light social-icon" title="Twitter">
+              <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-secondary">
+      <div class="text-center">
+        <p class="secondary-color mb-0">&copy; 2026 Urban Art Gallery. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

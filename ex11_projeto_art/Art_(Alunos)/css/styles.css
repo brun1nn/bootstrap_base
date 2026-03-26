@@ -1,1 +1,359 @@
-/* 2ª Digitação (Aqui) */
+/* =============================== COLORS AND VARIABLES =============================== */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+/* =============================== GENERAL STYLES =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =============================== HEADER STYLES =============================== */
+header {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+header h1 {
+  color: var(--dark-color);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+header p {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+/* =============================== NAVBAR STYLES =============================== */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* =============================== CENTER IMAGE CLASS =============================== */
+.center-image {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =============================== MAIN IMAGE SECTION =============================== */
+section:first-of-type .position-relative {
+  transition: transform 0.3s ease;
+}
+
+section:first-of-type .position-relative:hover {
+  transform: scale(1.02);
+}
+
+/* =============================== CARD STYLES =============================== */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text.secondary-color {
+  color: var(--secondary-color) !important;
+  font-size: 0.9rem;
+}
+
+/* =============================== BUTTON STYLES =============================== */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* =============================== TEXT UTILITIES =============================== */
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+h2 {
+  color: var(--dark-color);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+h2:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 1rem auto 0;
+}
+
+h5 {
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+p.lead {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* =============================== GALLERY SECTION =============================== */
+section#projects {
+  background-color: #fff;
+}
+
+section#projects .row {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============================== ARTISTS SECTION =============================== */
+section#artists .card {
+  border-radius: 8px;
+}
+
+section#artists .card img {
+  transition: transform 0.3s ease;
+}
+
+section#artists .card:hover img {
+  transform: scale(1.05);
+}
+
+/* =============================== FOOTER STYLES =============================== */
+footer {
+  background-color: var(--dark-color);
+  border-top: 3px solid var(--primary-color);
+}
+
+footer h5 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .secondary-color {
+  color: #adb5bd !important;
+}
+
+footer a.secondary-color {
+  text-decoration: none;
+  color: #adb5bd;
+  transition: all 0.3s ease;
+}
+
+footer a.secondary-color:hover {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+footer a.link-hover {
+  transition: all 0.3s ease;
+}
+
+footer a.link-hover:hover {
+  color: var(--primary-color) !important;
+  padding-left: 5px;
+}
+
+/* Social Icons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: #fff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+footer .text-light {
+  color: #fff !important;
+}
+
+hr.bg-secondary {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: none;
+  height: 1px;
+}
+
+/* =============================== RESPONSIVE DESIGN =============================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 5px 0;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  section:first-of-type .position-relative {
+    height: 300px !important;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer a.secondary-color:hover {
+    transform: none;
+  }
+
+  .social-icon {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  h2:after {
+    width: 40px;
+  }
+}
+
+/* =============================== ANIMATIONS =============================== */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* =============================== UTILITY CLASSES =============================== */
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
