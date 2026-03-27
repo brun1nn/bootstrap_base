@@ -99,7 +99,7 @@ body {
 }
 
 /* estilos para a marca/logo na barra de navegação */
-#navbar-brand {
+.navbar-brand {
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -125,7 +125,7 @@ body {
 
 /* ajusta espaçamento quando a largura da tela é maior que 768px */
 @media(min-width: 768px) {
-    .navbar-items {
+    #navbar-items {
         display: flex;
         min-width: 80%;
     }
@@ -148,8 +148,8 @@ body {
     }
 }
 
-/* estilos para campo de input em formulários */
-#searh-form,
+/* estilos para campos de input em formulários */
+#search-form,
 #news-form {
     border: 2px solid #f2f2f2;
     border-radius: 3px;
@@ -157,7 +157,7 @@ body {
 }
 
 /* estilos para campos de input quando focados */
-#earch-form input,
+#search-form input,
 #news-form input {
     background-color: transparent;
     border: none;
@@ -165,8 +165,8 @@ body {
 }
 
 /* estilos para campos de input quando focados */
-#search-form:focus,
-#news-form:focus {
+#search-form input:focus,
+#news-form input:focus {
     box-shadow: none;
 }
 
@@ -181,6 +181,12 @@ body {
 /* ajusta a posição dos itens na barra de navegação inferior */
 #bottom-navbar-container .container {
     justify-content: flex-end;
+}
+
+/* define a cor do texto e links na barra de navegação inferior */
+#bottom-navbar-container a {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* define cor do texto e links na barra de navegação inferior */
@@ -238,7 +244,7 @@ body {
 }
 
 /* estilos para as colunas dos mini banners */
-#mini-baners .col-12 {
+#mini-banners .col-12 {
     z-index: 1;
     height: 300px;
     padding: 1.5em;
@@ -272,7 +278,7 @@ body {
 }
 
 /* estilos para as imagens nos mini banners */
-#mini-banners col-12 img {
+#mini-banners .col-12 img {
     height: 220px;
     position: absolute;
     right: 1rem;
@@ -341,6 +347,7 @@ body {
 
 /* media query para telas com largura mínima de 768px */
 @media(min-width: 768px) {
+
     /* ajusta o alinhamento do título para a esquerda */
     .title {
         text-align: left;
@@ -356,8 +363,9 @@ body {
 }
 
 .discount-price {
-    font-family: 24px;
-    color: #976df2; /*cor destacada para o preço mais baixo*/
+    font-size: 24px;
+    color: #976df2;
+    /*cor destacada para o preço mais baixo*/
 }
 
 /* estilos para os catões de produtos */
@@ -426,6 +434,7 @@ body {
 
 /* media query para telas com largura mínima de 768px */
 @media(min-width: 768px) {
+
     /* ajusta tamanho do título para telas maiores */
     #bottom-banner h2 {
         font-size: 5em;
@@ -476,7 +485,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 225px;
-    cursor: point;
+    cursor: pointer;
     transition: .5s;
     border: 3px solid #0d0d0d;
 }
@@ -490,18 +499,23 @@ body {
 #insta1 {
     background-image: url(../img/insta1.jpg);
 }
+
 #insta2 {
     background-image: url(../img/insta2.jpg);
 }
+
 #insta3 {
     background-image: url(../img/insta3.jpg);
 }
+
 #insta4 {
     background-image: url(../img/insta4.jpg);
 }
+
 #insta5 {
     background-image: url(../img/insta5.jpg);
 }
+
 #insta6 {
     background-image: url(../img/insta6.jpg);
 }
@@ -545,6 +559,7 @@ body {
 #footer-links-container li a {
     text-decoration: none;
 }
+
 #footer-links-container li a:hover {
     color: #976df2;
 }
@@ -562,7 +577,7 @@ body {
 
 /* estilos para o número de telefone na coluna central no rodapé */
 #footer-center .store-phone {
-    color: #252525;
+    color: #976df2;
     font-weight: bold;
     font-size: 2rem;
     margin-top: -15px;
@@ -609,7 +624,7 @@ body {
 }
 
 /* estilos ao passar o mouse sobre os ícones de redes sociais */
-#social container i:hover {
+#social-container i:hover {
     color: #976df2;
 }
 
